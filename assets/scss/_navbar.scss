@@ -1,0 +1,17 @@
+.navbar-nav {
+
+	.nav-link {
+		border: map-get($border-widths, 5) $border-style $primary;
+		border-radius: $border-radius-pill;
+		color: $white;
+
+		&.active {
+			background-color: $white;
+			color: $black;
+		}
+
+		&:hover:not(.active) {
+			border-color: $white;
+		}
+	}
+}

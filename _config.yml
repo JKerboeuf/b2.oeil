@@ -1,0 +1,59 @@
+markdown: kramdown
+
+# URL du site
+url: ''
+
+# Titre du site
+title: B2.Oeil
+# Description du site
+description: "Cabinet ophtalmologique à Brumath en Alsace"
+# URL de l'image du site
+site-image: /assets/img/banniere.jpg
+# Keywords of the Site
+site-keywords: Ophtalmologie, Ophtalmo, Ophtalmologue, Cabinet, Docteur, Médecin, Szabo, Brumath, Alsace, Strasbourg, Lunettes, Lentilles
+# Default language
+locale: fr
+
+# SASS
+sass:
+  sass_dir: assets/css
+  style: compressed
+
+# Build settings
+plugins:
+  - jekyll-feed
+
+# Permalink
+permalink: "/annonces/:title"
+
+# Compress
+compress_html:
+  clippings: all
+
+# Defaults
+defaults:
+  -
+    scope:
+      type: 'posts'
+    values:
+      layout: annonce
+  -
+    scope:
+      type: 'pages'
+    values:
+      layout: page
+
+# Exclude
+exclude:
+  - .gitignore
+  - start.bat
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

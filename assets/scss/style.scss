@@ -1,0 +1,26 @@
+---
+---
+
+// BOOTSTRAP
+@import './bs/functions';
+@import './bs/variables';
+@import './bs_var-overrides';
+@import './bs/bootstrap';
+
+// FONT AWESOME
+@import './fa/fontawesome';
+@import './fa_var-overrides';
+@import './fa/brands';
+@import './fa/light';
+@import './fa/regular';
+@import './fa/solid';
+@import './fa/thin';
+@import './fa/sharp-light';
+@import './fa/sharp-regular';
+@import './fa/sharp-solid';
+@import './fa/sharp-thin';
+@import './fa/duotone';
+@import './fa/duotone-icons';
+
+// CUSTOM
+@import './navbar';

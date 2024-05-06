@@ -1,0 +1,6 @@
+$font-size-base: 1.1rem;
+$primary: #5452cf;
+
+$theme-colors: map-merge($theme-colors, (
+	"primary": $primary
+));

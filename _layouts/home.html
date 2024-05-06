@@ -1,0 +1,57 @@
+---
+layout: compress
+---
+
+{% include head.html %}
+<h1 class="text-center mb-4">{{ site.title }}</h1>
+{% include navbar.html %}
+<section id="rdv" class="py-5">
+	<h2>Prendre un rendez-vous</h2>
+	<div class="row py-2 mx-auto">
+		<div class="col-7 px-0 py-5 m-auto text-center">
+			<p>
+				La prise de rendez-vous se fait par <strong>téléphone</strong> ou sur <strong>Doctolib</strong>.
+			</p>
+			<p class="mb-0">
+				Vous pouvez appeler du <strong>lundi</strong> au <strong>vendredi</strong> entre <strong>8h</strong>
+				et
+				<strong>18h</strong><br>
+				et le <strong>samedi</strong> entre <strong>8h</strong> et <strong>12h</strong>
+			</p>
+		</div>
+		<div class="col-5 px-0 py-5 m-auto text-center bg-body-secondary rounded-4">
+			<div class="m-auto h-100 w-50">
+				<a href="tel:{{ site.data.coords.tel }}" class="btn btn-lg btn-primary d-block rounded-pill">
+					<i class="fa-solid fa-phone"></i> {{ site.data.coords.tel-text }}
+				</a>
+				<br>
+				<a href="{{ site.data.coords.doctolib }}" class="btn btn-lg btn-primary d-block rounded-pill"
+					target="_blank">
+					<i class="fa-solid fa-arrow-up-right-from-square"></i> Doctolib
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+<hr class="w-75 mx-auto">
+<section id="itineraire" class="py-5">
+	<h2>Se rendre au cabinet</h2>
+	<div class="row py-2 mx-auto">
+		<div class="col-5 px-0 py-5 m-auto text-center bg-body-secondary rounded-4">
+			<p>Le cabinet se trouve à Brumath à l'adresse suivante :</p>
+			<p><strong>{{ site.data.coords.adresse }}</strong></p>
+			<button type="button" class="btn btn-lg btn-primary d-block rounded-pill w-50 mx-auto"
+				onclick="copyAdress()" data-bs-toggle="tooltip" data-bs-title="Adresse copié !" id="adresse-btn">
+				<i class="fa-solid fa-copy"></i> Copier l'adresse
+			</button>
+			<input id="adresse-text" type="text" class="d-none" value="{{ site.data.coords.adresse }}">
+		</div>
+		<div class="col-7 px-0 py-5 m-auto text-center">
+			<iframe title="cabinet-maps"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d782.4560011387484!2d7.719119025787628!3d48.72731110133843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796bf1b3e619d5f%3A0x2a045f0b75907d99!2sDocteur%20Elisabeth%20Szabo%20-%20Ophtalmologue!5e0!3m2!1sfr!2sfr!4v1714984414736!5m2!1sfr!2sfr"
+				width="700" height="450" allowfullscreen="" loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</div>
+</section>
+{% include foot.html %}

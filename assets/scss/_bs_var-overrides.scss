@@ -5,6 +5,7 @@ $theme-colors: map-merge($theme-colors, (
 	"primary": $primary
 ));
 
+// Pagination
 $pagination-border-radius-lg: $border-radius-pill;
 
 $pagination-bg: #5452cf;
@@ -21,4 +22,7 @@ $pagination-hover-border-color: #5452cf;
 
 $pagination-disabled-color: #fffc;
 $pagination-disabled-bg: #3f3d9c;
-$pagination-disabled-border-color: hsl(241, 57%, 57%);
+$pagination-disabled-border-color: #5452cf;
+
+$pagination-focus-color: #000	;
+$pagination-focus-bg: #fff;

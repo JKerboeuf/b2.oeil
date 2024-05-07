@@ -47,7 +47,7 @@ layout: compress
 <hr class="w-75 mx-auto">
 <section id="annonces" class="py-5">
 	<h2>Annonces</h2>
-	{% for annonce in site.posts offset:0 limit:5 %}
+	{% for annonce in site.posts offset:0 limit:3 %}
 	{% include annonce-card.html %}
 	{% endfor %}
 	<div class="text-center">

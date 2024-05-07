@@ -1,15 +1,12 @@
-.navbar-nav {
+.navbar {
 
 	.nav-link {
 		border-radius: $border-radius-pill;
 		color: $white;
 
-		&.active {
-			background-color: $white;
-			color: $black;
-		}
-
-		&:hover {
+		&.active,
+		&:hover,
+		&:focus {
 			background-color: $white;
 			color: $black;
 		}

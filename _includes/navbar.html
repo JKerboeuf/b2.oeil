@@ -7,8 +7,16 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				<ul class="navbar-nav justify-content-evenly w-100">
-					<li class="nav-item"><a class="nav-link fs-5{% if page.url == '/' %} active" aria-current="page{% endif %}" href="/">Home</a></li>
-					<li class="nav-item"><a class="nav-link fs-5{% if page.url contains 'annonces' %} active" aria-current="page{% endif %}" href="/annonces">Annonces</a></li>
+					<li class="nav-item">
+						<a href="/" class="nav-link fs-5{% if page.url == '/' %} active" aria-current="page{% endif %}">
+							<i class="fa-solid fa-home"></i> Home
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="/annonces" class="nav-link fs-5{% if page.url contains 'annonces' %} active" aria-current="page{% endif %}">
+							<i class="fa-solid fa-newspaper"></i> Annonces
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>

@@ -1,0 +1,19 @@
+.pagination {
+	.page-item {
+		border: 5px solid #5452cf;
+		background-color: #5452cf;
+		color: #fff;
+
+		&:first-child {
+			border-radius: $border-radius-pill 0 0 $border-radius-pill;
+		}
+		&:last-child {
+			border-radius: 0 $border-radius-pill $border-radius-pill 0;
+		}
+	}
+
+	.page-link {
+		border: 0;
+		border-radius: $border-radius-pill;
+	}
+}

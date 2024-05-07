@@ -6,7 +6,7 @@ url: ''
 # Titre du site
 title: B2.Oeil
 # Description du site
-description: "Cabinet ophtalmologique à Brumath en Alsace"
+description: "Cabinet ophtalmologique du docteur Elisabeth Szabo à Brumath en Alsace"
 # URL de l'image du site
 site-image: /assets/img/banniere.jpg
 # Keywords of the Site
@@ -21,10 +21,15 @@ sass:
 
 # Build settings
 plugins:
+  - jekyll-paginate
   - jekyll-feed
 
 # Permalink
 permalink: "/annonces/:title"
+
+# Pagination
+paginate: 5
+paginate_path: "/annonces/page:num/"
 
 # Compress
 compress_html:

@@ -3,28 +3,18 @@ layout: compress
 ---
 
 {% include head.html %}
-<h1 class="text-center mb-4">{{ site.title }}</h1>
+<h1 class="text-center mb-4 display-1">{{ site.title }}</h1>
 {% include navbar.html %}
 <section id="rdv" class="py-5">
 	<h2>Prendre un rendez-vous</h2>
 	<div class="row py-2 mx-auto">
 		<div class="col-7 px-0 py-5 m-auto text-center">
-			<p>
-				La prise de rendez-vous se fait par <strong>téléphone</strong> ou sur <strong>Doctolib</strong>.
-			</p>
 			<p class="mb-0">
-				Vous pouvez appeler du <strong>lundi</strong> au <strong>vendredi</strong> entre <strong>8h</strong>
-				et
-				<strong>18h</strong><br>
-				et le <strong>samedi</strong> entre <strong>8h</strong> et <strong>12h</strong>
+				La prise de rendez-vous se fait uniquement par <strong>Doctolib</strong>.
 			</p>
 		</div>
 		<div class="col-5 px-0 py-5 m-auto text-center bg-body-secondary rounded-4">
 			<div class="m-auto h-100 w-50">
-				<a href="tel:{{ site.data.coords.tel }}" class="btn btn-lg btn-primary d-block rounded-pill">
-					<i class="fa-solid fa-phone"></i> {{ site.data.coords.tel-text }}
-				</a>
-				<br>
 				<a href="{{ site.data.coords.doctolib }}" class="btn btn-lg btn-primary d-block rounded-pill"
 					target="_blank">
 					<i class="fa-solid fa-arrow-up-right-from-square"></i> Doctolib
@@ -52,6 +42,18 @@ layout: compress
 				width="700" height="450" allowfullscreen="" loading="lazy"
 				referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</div>
+	</div>
+</section>
+<hr class="w-75 mx-auto">
+<section id="annonces" class="py-5">
+	<h2>Annonces</h2>
+	{% for annonce in site.posts offset:0 limit:5 %}
+	{% include annonce-card.html %}
+	{% endfor %}
+	<div class="text-center">
+		<a href="{{ site.url }}/annonces" class="btn btn-lg btn-primary rounded-pill">
+			<i class="fa-solid fa-newspaper"></i> Voir toutes les annonces
+		</a>
 	</div>
 </section>
 {% include foot.html %}

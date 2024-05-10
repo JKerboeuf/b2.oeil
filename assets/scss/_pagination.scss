@@ -1,8 +1,8 @@
 .pagination {
 	.page-item {
-		border: 5px solid #5452cf;
-		background-color: #5452cf;
-		color: #fff;
+		border: 5px solid $color-primary;
+		background-color: $color-primary;
+		color: white;
 
 		&:first-child {
 			border-radius: $border-radius-pill 0 0 $border-radius-pill;

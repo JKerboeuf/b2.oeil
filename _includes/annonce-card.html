@@ -1,11 +1,11 @@
-<div class="card w-75 mx-auto my-4">
+<div class="card my-3 mx-2 mx-md-4">
 	<div class="card-body">
 		<h3 class="card-title fw-bold">{{ annonce.title }}</h3>
 		<hr>
 		<p class="card-text">{{ annonce.content | truncate: 300 | strip_html | strip_newlines }}</p>
-		<a href="{{ annonce.url }}" class="btn btn-lg btn-primary rounded-pill stretched-link">Lire plus</a>
+		<a href="{{ annonce.url }}" class="btn btn-lg btn-primary rounded-pill stretched-link">Lire plus <i class="fa-solid fa-right"></i></a>
 	</div>
 	<div class="card-footer text-body-secondary">
-		<i class="fa-solid fa-calendar-clock"></i> Posté le {{ annonce.date | date: "%d/%m/%Y" }}
+		<i class="fa-solid fa-calendar-clock"></i> Publié le {{ annonce.date | date: "%d/%m/%Y" }}
 	</div>
 </div>

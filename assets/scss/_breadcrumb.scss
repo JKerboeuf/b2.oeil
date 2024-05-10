@@ -1,0 +1,30 @@
+.breadcrumb {
+	.active > .breadcrumb-link {
+		color: black;
+		background-color: white;
+	}
+
+	.breadcrumb-item + .breadcrumb-item {
+		padding-left: .3rem;
+	}
+
+	.breadcrumb-item + .breadcrumb-item::before {
+		padding-right: .3rem;
+	}
+
+	.breadcrumb-link {
+		color: white;
+		background-color: $color-primary;
+		border-radius: $border-radius-pill;
+		padding: .25rem .5rem;
+		text-decoration: none;
+		transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+		&:hover,
+		&:focus {
+			background-color: white;
+			color: black;
+			border: none;
+		}
+	}
+}

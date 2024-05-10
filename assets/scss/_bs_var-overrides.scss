@@ -1,28 +1,33 @@
-$font-size-base: 1.1rem;
-$primary: #5452cf;
+$font-size-base: 1.3rem;
 
 $theme-colors: map-merge($theme-colors, (
-	"primary": $primary
+	"primary": $color-primary
 ));
 
 // Pagination
 $pagination-border-radius-lg: $border-radius-pill;
 
-$pagination-bg: #5452cf;
-$pagination-color: #fff;
-$pagination-border-color: #5452cf;
+$pagination-bg: $color-primary;
+$pagination-color: white;
+$pagination-border-color: $color-primary;
 
-$pagination-active-color: #000;
-$pagination-active-bg: #fff;
-$pagination-active-border-color: #5452cf;
+$pagination-active-color: black;
+$pagination-active-bg: white;
+$pagination-active-border-color: $color-primary;
 
-$pagination-hover-color: #000;
-$pagination-hover-bg: #fff;
-$pagination-hover-border-color: #5452cf;
+$pagination-hover-color: black;
+$pagination-hover-bg: white;
+$pagination-hover-border-color: $color-primary;
 
-$pagination-disabled-color: #fffc;
-$pagination-disabled-bg: #3f3d9c;
-$pagination-disabled-border-color: #5452cf;
+$pagination-disabled-color: white;
+$pagination-disabled-bg: $color-disabled;
+$pagination-disabled-border-color: $color-primary;
 
-$pagination-focus-color: #000	;
-$pagination-focus-bg: #fff;
+$pagination-focus-color: black;
+$pagination-focus-bg: white;
+
+$breadcrumb-divider-color: white;
+$breadcrumb-divider: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='8' height='8'><path d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='#{$breadcrumb-divider-color}'/></svg>");
+
+$card-border-color: $color-primary;
+$card-border-radius: $border-radius-xl;

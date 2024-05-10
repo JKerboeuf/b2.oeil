@@ -1,0 +1,19 @@
+.btn {
+	box-shadow: $box-shadow;
+	transition: transform .15s ease-in-out;
+
+	&:hover:not(.stretched-link),
+	&:focus:not(.stretched-link) {
+		transform: scale(103%);
+	}
+}
+
+.card {
+	box-shadow: $box-shadow;
+	transition: transform .15s ease-in-out;
+
+	&:hover,
+	&:focus {
+		transform: scale(101%);
+	}
+}

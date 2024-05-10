@@ -1,0 +1,13 @@
+<h1 class="text-center mb-3 display-1">{{ site.title }}</h1>
+{% include navbar.html %}
+{% unless page.layout == 'home' %}
+{% include breadcrumb.html %}
+{% if page.layout == 'annonce' %}
+<div class="bg-body-secondary rounded-4 text-center m-3 p-3 border-primary border">
+	<h2 class="display-3">{{ page.title }}</h2>
+	<em><i class="fa-solid fa-calendar-clock"></i> Publié le {{ page.date | date: "%d/%m/%Y" }}</em>
+</div>
+{% else %}
+<h2 class="text-center py-2 display-3">{{ page.title }}</h2>
+{% endif %}
+{% endunless %}

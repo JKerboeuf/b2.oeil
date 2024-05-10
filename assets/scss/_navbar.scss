@@ -1,14 +1,14 @@
-.navbar {
+.nav {
 
 	.nav-link {
 		border-radius: $border-radius-pill;
-		color: $white;
+		color: white;
 
 		&.active,
 		&:hover,
 		&:focus {
-			background-color: $white;
-			color: $black;
+			background-color: white;
+			color: black;
 		}
 	}
 }

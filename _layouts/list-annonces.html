@@ -3,8 +3,7 @@ layout: compress
 ---
 
 {% include head.html %}
-<h1 class="text-center mb-4 display-1">{{ site.title }}</h1>
-{% include navbar.html %}
+{% include header.html %}
 {% include pagination.html %}
 {% for annonce in paginator.posts %}
 {% include annonce-card.html %}

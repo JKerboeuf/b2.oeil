@@ -1,6 +1,8 @@
 ---
 ---
 
+@import './variables';
+
 // BOOTSTRAP
 @import './bs/functions';
 @import './bs/variables';
@@ -23,5 +25,8 @@
 @import './fa/duotone-icons';
 
 // CUSTOM
+@import './body';
 @import './navbar';
+@import './buttons';
 @import './pagination';
+@import './breadcrumb';

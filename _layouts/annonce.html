@@ -3,9 +3,8 @@ layout: compress
 ---
 
 {% include head.html %}
-<h1 class="text-center mb-4 display-1">{{ site.title }}</h1>
-{% include navbar.html %}
-<h2>{{ page.title }}</h2>
-<em>{{ page.date | date: "%d/%m/%Y" }}</em>
-{{ page.content }}
+{% include header.html %}
+<section class="p-4">
+	{{ page.content }}
+</section>
 {% include foot.html %}

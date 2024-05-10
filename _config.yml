@@ -42,15 +42,11 @@ defaults:
       type: 'posts'
     values:
       layout: annonce
-  -
-    scope:
-      type: 'pages'
-    values:
-      layout: page
 
 # Exclude
 exclude:
   - .gitignore
+  - install.bat
   - start.bat
   - .sass-cache/
   - .jekyll-cache/
@@ -62,3 +58,5 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - assets/scss/bs/
+  - assets/scss/fa/

@@ -1,0 +1,17 @@
+<footer class="bg-primary rounded-pill mx-1 py-2 row">
+	<div class="col align-content-center">
+		<a href="/feed.xml" class="btn btn-lg btn-light rounded-pill w-100">
+			<i class="fa-solid fa-rss-square"></i> Flux RSS
+		</a>
+	</div>
+	<div class="col align-content-center">
+		<a href="tel:{{ site.data.coords.tel }}" class="btn btn-lg btn-light rounded-pill w-100">
+			<i class="fa-solid fa-phone"></i> {{ site.data.coords.tel-text }}
+		</a>
+	</div>
+	<div class="col align-content-center">
+		<p class="text-center text-light mb-0">
+			<i class="far fa-copyright"></i> {{ "now" | date: "%Y" }} Elisabeth Szabo
+		</p>
+	</div>
+</footer>

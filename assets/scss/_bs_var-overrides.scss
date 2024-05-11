@@ -4,6 +4,8 @@ $theme-colors: map-merge($theme-colors, (
 	"primary": $color-primary
 ));
 
+$link-color: $color-primary;
+
 // Pagination
 $pagination-border-radius-lg: $border-radius-pill;
 

@@ -21,13 +21,13 @@
 		{% if paginator.previous_page %}
 		<li class="page-item">
 			<a href="{{ paginator.previous_page_path }}" class="page-link rounded-start-pill">
-				<i class="fa-solid fa-left"></i><span class="d-none d-sm-inline d-md-none d-lg-inline"> Précédent</span>
+				<i class="fa-solid fa-left" role="img" aria-hidden="true"></i><span class="d-none d-sm-inline d-md-none d-lg-inline"> Précédent</span>
 			</a>
 		</li>
 		{% else %}
 		<li class="page-item disabled">
 			<span class="page-link rounded-start-pill">
-				<i class="fa-solid fa-left"></i><span class="d-none d-sm-inline d-md-none d-lg-inline"> Précédent</span>
+				<i class="fa-solid fa-left" role="img" aria-hidden="true"></i><span class="d-none d-sm-inline d-md-none d-lg-inline"> Précédent</span>
 			</span>
 		</li>
 		{% endif %}
@@ -86,13 +86,13 @@
 		{% if paginator.next_page %}
 		<li class="page-item ">
 			<a href="{{ paginator.next_page_path }}" class="page-link">
-				<span class="d-none d-sm-inline d-md-none d-lg-inline">Suivant </span><i class="fa-solid fa-right"></i>
+				<span class="d-none d-sm-inline d-md-none d-lg-inline">Suivant </span><i class="fa-solid fa-right" role="img" aria-hidden="true"></i>
 			</a>
 		</li>
 		{% else %}
 		<li class="page-item disabled">
 			<span class="page-link">
-				<span class="d-none d-sm-inline d-md-none d-lg-inline">Suivant </span><i class="fa-solid fa-right"></i>
+				<span class="d-none d-sm-inline d-md-none d-lg-inline">Suivant </span><i class="fa-solid fa-right" role="img" aria-hidden="true"></i>
 			</span>
 		</li>
 		{% endif %}

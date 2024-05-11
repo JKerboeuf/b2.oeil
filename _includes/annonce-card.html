@@ -3,9 +3,9 @@
 		<h3 class="card-title fw-bold">{{ annonce.title }}</h3>
 		<hr>
 		<p class="card-text">{{ annonce.content | truncate: 300 | strip_html | strip_newlines }}</p>
-		<a href="{{ annonce.url }}" class="btn btn-lg btn-primary rounded-pill stretched-link">Lire plus <i class="fa-solid fa-right"></i></a>
+		<a href="{{ annonce.url }}" class="btn btn-lg btn-primary rounded-pill stretched-link">Lire l'article entier <i class="fa-solid fa-right" role="img" aria-hidden="true"></i></a>
 	</div>
-	<div class="card-footer text-body-secondary">
-		<i class="fa-solid fa-calendar-clock"></i> Publié le {{ annonce.date | date: "%d/%m/%Y" }}
+	<div class="card-footer">
+		<i class="fa-solid fa-calendar-clock" role="img" aria-hidden="true"></i> Publié le {{ annonce.date | date: "%d/%m/%Y" }}
 	</div>
 </div>

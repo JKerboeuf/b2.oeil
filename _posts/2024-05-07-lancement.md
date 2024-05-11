@@ -2,7 +2,7 @@
 title: Lancement du site
 ---
 
-# Bienvenue sur les nouveau site de B2.Oeil !
+## Bienvenue sur les nouveau site de B2.Oeil !
 
 Voice le nouveau site de B2.Oeil, il permet de voir facilement les informations du cabinet.  
 Vous y trouverez aussi toutes les annonces du cabinet pour vous tenir au courant de la situation.

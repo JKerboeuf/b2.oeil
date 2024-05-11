@@ -4,10 +4,12 @@ layout: compress
 
 {% include head.html %}
 {% include header.html %}
-{% include pagination.html %}
-{% for annonce in paginator.posts %}
-{% include annonce-card.html %}
-{% endfor %}
-{% include pagination.html %}
+<main id="contenu">
+	{% include pagination.html %}
+	{% for annonce in paginator.posts %}
+	{% include annonce-card.html %}
+	{% endfor %}
+	{% include pagination.html %}
+</main>
 {% include footer.html %}
 {% include foot.html %}

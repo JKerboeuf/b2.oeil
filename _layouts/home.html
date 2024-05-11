@@ -4,70 +4,78 @@ layout: compress
 
 {% include head.html %}
 {% include header.html %}
-<section id="presentation" class="p-3">
-	<h2><i class="fa-solid fa-user-doctor"></i> Présentation</h2>
-	<div class="text-center pt-2 mx-auto">
-		<p>
-			Le docteur <strong>Elisabeth Szabo</strong> vous reçoit dans son cabinet à <strong>Brumath</strong>.<br>
-			L'ophtalmologue, ou ophtalmologiste, traite l'ensemble des maladies de l’œil. Il prend notamment en charge
-			les
-			troubles de la réfraction (presbytie, myopie, hypermétropie astigmatisme), le strabisme, les troubles de la
-			vision des couleurs, les glaucomes ou encore les pathologies de la rétine ou de la paupière.
-		</p>
-		<a href="/docteur" class="btn btn-lg btn-primary rounded-pill"><i class="fa-solid fa-magnifying-glass"></i> À
-			propos du Dr. Szabo</a>
-	</div>
-</section>
-<hr class="w-75 mx-auto">
-<section id="rdv" class="p-3">
-	<h2><i class="fa-solid fa-calendar-lines-pen"></i> Prendre un rendez-vous</h2>
-	<div class="row py-2 mx-auto">
-		<div class="col-12 col-md-6 col-lg-7 px-0 py-3 m-auto text-center">
-			<p class="mb-0">
-				La prise de rendez-vous se fait uniquement par <strong>Doctolib</strong>.
+<main id="contenu">
+	<section id="presentation" class="p-3">
+		<h2><i class="fa-solid fa-user-doctor" role="img" aria-hidden="true"></i> Présentation</h2>
+		<div class="text-center pt-2 mx-auto">
+			<p>
+				Le docteur <strong>Elisabeth Szabo</strong> vous reçoit dans son cabinet à <strong>Brumath</strong>.<br>
+				L'ophtalmologue, ou ophtalmologiste, traite l'ensemble des maladies de l’œil. Il prend notamment en
+				charge
+				les
+				troubles de la réfraction (presbytie, myopie, hypermétropie astigmatisme), le strabisme, les troubles de
+				la
+				vision des couleurs, les glaucomes ou encore les pathologies de la rétine ou de la paupière.
 			</p>
-		</div>
-		<div class="col-12 col-md-6 col-lg-5 px-0 py-3 m-auto">
-			<a href="{{ site.data.coords.doctolib }}" class="btn btn-lg btn-primary rounded-pill d-block w-50 mx-auto"
-				target="_blank">
-				<i class="fa-solid fa-arrow-up-right-from-square"></i> Doctolib
+			<a href="/docteur" class="btn btn-lg btn-primary rounded-pill">
+				<i class="fa-solid fa-magnifying-glass" role="img" aria-hidden="true"></i>
+				À propos du Dr. Szabo
 			</a>
 		</div>
-	</div>
-</section>
-<hr class="w-75 mx-auto">
-<section id="itineraire" class="p-3">
-	<h2><i class="fa-solid fa-map-location"></i> Se rendre au cabinet</h2>
-	<div class="row py-2 mx-auto">
-		<div class="col-12 col-lg-5 px-0 py-3 m-auto text-center">
-			<p>Le cabinet est ouvert du <strong>Lundi au Jeudi</strong> entre <strong>08h00 et 18h30</strong></p>
-			<p>Le cabinet se trouve à Brumath à l'adresse suivante :<br>
-				<strong>{{ site.data.coords.adresse }}</strong></p>
-			<button type="button" class="btn btn-lg btn-primary d-block rounded-pill w-75 mx-auto"
-				onclick="copyAddress()" data-bs-toggle="tooltip" data-bs-title="Adresse copié !" id="adresse-btn">
-				<i class="fa-solid fa-copy"></i> Copier l'adresse
-			</button>
-			<input id="adresse-text" type="text" class="d-none" value="{{ site.data.coords.adresse }}">
+	</section>
+	<hr class="w-75 mx-auto">
+	<section id="rdv" class="p-3">
+		<h2><i class="fa-solid fa-calendar-lines-pen" role="img" aria-hidden="true"></i> Prendre un rendez-vous</h2>
+		<div class="row py-2 mx-auto">
+			<div class="col-12 col-md-6 col-lg-7 px-0 py-3 m-auto text-center">
+				<p class="mb-0">
+					La prise de rendez-vous se fait uniquement par <strong>Doctolib</strong>.
+				</p>
+			</div>
+			<div class="col-12 col-md-6 col-lg-5 px-0 py-3 m-auto">
+				<em class="visually-hidden">Le lien suivant ouvre Doctolib dans un nouvel onglet</em>
+				<a href="{{ site.data.coords.doctolib }}"
+					class="btn btn-lg btn-primary rounded-pill d-block w-50 mx-auto" target="_blank">
+					<i class="fa-solid fa-arrow-up-right-from-square" role="img" aria-hidden="true"></i> Doctolib
+				</a>
+			</div>
 		</div>
-		<div class="col-12 col-lg-7 px-0 ps-lg-3 py-3 m-auto">
-			<iframe title="cabinet-maps" class="rounded-4 shadow w-100 border border-primary"
-				style="min-height: 50vh; max-height: 100% !important;"
-				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d782.4560011387484!2d7.719119025787628!3d48.72731110133843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796bf1b3e619d5f%3A0x2a045f0b75907d99!2sDocteur%20Elisabeth%20Szabo%20-%20Ophtalmologue!5e0!3m2!1sfr!2sfr!4v1714984414736!5m2!1sfr!2sfr"
-				allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</section>
+	<hr class="w-75 mx-auto">
+	<section id="itineraire" class="p-3">
+		<h2><i class="fa-solid fa-map-location" role="img" aria-hidden="true"></i> Se rendre au cabinet</h2>
+		<div class="row py-2 mx-auto">
+			<div class="col-12 col-lg-5 px-0 py-3 m-auto text-center">
+				<p>Le cabinet est ouvert du <strong>Lundi au Jeudi</strong> entre <strong>08h00 et 18h30</strong></p>
+				<p>Le cabinet se trouve à Brumath à l'adresse suivante :<br>
+					<strong>{{ site.data.coords.adresse }}</strong></p>
+				<button type="button" class="btn btn-lg btn-primary d-block rounded-pill w-75 mx-auto"
+					onclick="copyAddress()" data-bs-toggle="tooltip" data-bs-title="Adresse copié !" id="adresse-btn">
+					<i class="fa-solid fa-copy" role="img" aria-hidden="true"></i> Copier l'adresse
+				</button>
+				<input id="adresse-text" type="text" class="d-none" value="{{ site.data.coords.adresse }}"
+					aria-label="adresse pour copie">
+			</div>
+			<div class="col-12 col-lg-7 px-0 ps-lg-3 py-3 m-auto">
+				<iframe title="cabinet-maps" class="rounded-4 shadow w-100 border border-primary"
+					style="min-height: 50vh; max-height: 100% !important;"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d782.4560011387484!2d7.719119025787628!3d48.72731110133843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796bf1b3e619d5f%3A0x2a045f0b75907d99!2sDocteur%20Elisabeth%20Szabo%20-%20Ophtalmologue!5e0!3m2!1sfr!2sfr!4v1714984414736!5m2!1sfr!2sfr"
+					allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
 		</div>
-	</div>
-</section>
-<hr class="w-75 mx-auto">
-<section id="annonces" class="p-2">
-	<h2><i class="fa-solid fa-newspaper"></i> Annonces</h2>
-	{% for annonce in site.posts offset:0 limit:3 %}
-	{% include annonce-card.html %}
-	{% endfor %}
-	<div class="text-center">
-		<a href="/annonces" class="btn btn-lg btn-primary rounded-pill">
-			<i class="fa-solid fa-newspaper"></i> Voir toutes les annonces
-		</a>
-	</div>
-</section>
+	</section>
+	<hr class="w-75 mx-auto">
+	<section id="annonces" class="p-2">
+		<h2><i class="fa-solid fa-newspaper" role="img" aria-hidden="true"></i> Annonces</h2>
+		{% for annonce in site.posts offset:0 limit:3 %}
+		{% include annonce-card.html %}
+		{% endfor %}
+		<div class="text-center">
+			<a href="/annonces" class="btn btn-lg btn-primary rounded-pill">
+				<i class="fa-solid fa-newspaper" role="img" aria-hidden="true"></i> Voir toutes les annonces
+			</a>
+		</div>
+	</section>
+</main>
 {% include footer.html %}
 {% include foot.html %}

@@ -1,15 +1,15 @@
 <div class="sticky-top py-1">
-	<nav class="nav justify-content-evenly w-100 bg-primary rounded-pill py-2">
-		<a href="/" class="nav-link fs-5 px-4{% if page.url == '/' %} active" aria-current="page{% endif %}">
-			<i class="d-none d-sm-inline-block fa-solid fa-home"></i> Accueil
+	<nav class="nav justify-content-evenly w-100 bg-primary rounded-pill py-2" aria-label="Barre de navigation">
+		{% for link in site.data.navs %}
+		{% if page.url == link.url %}
+		<span class="nav-link fs-5 px-4 active" aria-current="page">
+			<i class="d-none d-sm-inline-block fa-solid fa-{{ link.icone }}" role="img" aria-hidden="true"></i> {{ link.texte }}
+		</span>
+		{% else %}
+		<a href="{{ link.url }}" class="nav-link fs-5 px-4">
+			<i class="d-none d-sm-inline-block fa-solid fa-{{ link.icone }}" role="img" aria-hidden="true"></i> {{ link.texte }}
 		</a>
-		<a href="/docteur" class="nav-link fs-5 px-4{% if page.url == '/docteur' %} active"
-			aria-current="page{% endif %}">
-			<i class="d-none d-sm-inline-block fa-solid fa-user-doctor"></i> Dr. Szabo
-		</a>
-		<a href="/annonces" class="nav-link fs-5 px-4{% if page.url contains 'annonces' %} active"
-			aria-current="page{% endif %}">
-			<i class="d-none d-sm-inline-block fa-solid fa-newspaper"></i> Annonces
-		</a>
+		{% endif %}
+		{% endfor %}
 	</nav>
 </div>
